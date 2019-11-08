@@ -6,9 +6,9 @@ shopt -s dotglob
 wget https://github.com/magento/magento2/archive/$MAGENTO_VERSION.zip && 
 unzip $MAGENTO_VERSION.zip &&
 mv -v magento2-$MAGENTO_VERSION/* www/html/ &&
-rm -rf magento2-$MAGENTO_VERSION $MAGENTO_VERSION.zip magento2-dockerized-init.txt
+rm -rf magento2-$MAGENTO_VERSION $MAGENTO_VERSION.zip www/html/magento2-dockerized-init.txt
 
-cd www/html && composer update
+composer update -d www/html 
 
 docker-compose up -d
 

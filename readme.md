@@ -1,5 +1,6 @@
 ## USAGE
-1. Define variables in .env file
+
+Define variables in .env file
 ```
 MYSQL_HOST=db
 MYSQL_ROOT_PASSWORD=root
@@ -23,4 +24,9 @@ MAGENTO_ADMIN_USERNAME=admin
 MAGENTO_ADMIN_PASSWORD=admin123
 ```
 
-2. Run `bash magento-runner.sh`
+New Project
+1. Update auth credentials or use existing one in auth.json
+
+
+
+Run `bash magento-runner.sh`
